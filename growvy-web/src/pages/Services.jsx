@@ -144,7 +144,7 @@ export default function Services() {
             <h3 className="text-2xl font-bold text-black">
               With Growvy Solution
             </h3>
-            <p className="text-gray-600 mt-2 max-w-sm">
+            <p className="text-gray-700 mt-2 max-w-sm">
               With Growvy, businesses can access a database of active job
               seekers who have recently joined for job search. Use advanced
               filters to find the right candidates quickly and at a fraction of
