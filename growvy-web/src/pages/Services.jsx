@@ -133,6 +133,7 @@ export default function Services() {
         </div>
         {/* Card 2 */}
         <div className="grid md:grid-cols-2 items-center gap-6">
+          {/* Image */}
           <div className="flex justify-center">
             <img
               src="/images/employer.svg"
@@ -140,19 +141,91 @@ export default function Services() {
               className="max-w-[200px]"
             />
           </div>
-          <div>
+
+          {/* Text Content */}
+          <div className="max-w-sm">
             <h3 className="text-2xl font-bold text-black">
               With Growvy Solution
             </h3>
-            <p className="text-gray-700 mt-2 max-w-sm">
+            <p className="text-gray-700 mt-2">
               With Growvy, businesses can access a database of active job
               seekers who have recently joined for job search. Use advanced
               filters to find the right candidates quickly and at a fraction of
               the cost—no wasted budget, just quality hires!
             </p>
-            <button className="mt-4 bg-[#03AF08] text-white px-5 py-2 rounded-full text-sm font-semibold hover:opacity-90 transition">
-              Start Now
-            </button>
+            <div className="mt-4 flex justify-end">
+              <button className="bg-[#03AF08] text-white px-8 py-2 rounded-full text-sm font-semibold hover:opacity-90 transition">
+                Start Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-white py-16 px-6 md:px-12 mt-28">
+          <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+            <div className="flex-1">
+              <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
+                E-commerce Business
+              </h2>
+              <p className="text-gray-700 text-base max-w-sm">
+                E-commerce businesses struggle with high marketing costs,
+                inefficient operations, and slow growth, making it difficult to
+                scale and maximize profits.
+              </p>
+            </div>
+            <div className="flex-1 flex justify-center">
+              <img
+                src="/images/ecommerce-owner.svg"
+                alt="E-commerce"
+                className="w-full max-w-sm"
+              />
+            </div>
+          </div>
+        </div>
+        {/* Card 2 */}
+        <div className="grid md:grid-cols-2 items-center gap-6">
+          {/* Image */}
+          <div className="flex justify-center">
+            <img
+              src="/images/employer.svg"
+              alt="Employer"
+              className="max-w-[200px]"
+            />
+          </div>
+
+          {/* Text Content */}
+          <div className="max-w-sm">
+            <h3 className="text-2xl font-bold text-black">
+              With Growvy Solution
+            </h3>
+            <p className="text-gray-700 mt-2">
+              Growvy helps e-commerce businesses streamline operations, manage
+              assets, and implement smart growth strategies to boost sales and
+              efficiency—all at a low cost with proven results.
+            </p>
+            <div className="mt-4 flex justify-end">
+              <button className="bg-[#03AF08] text-white px-8 py-2 rounded-full text-sm font-semibold hover:opacity-90 transition">
+                Start Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+          {/* Section: Schedule Call */}
+        <div className="bg-white py-16 px-6 md:px-12 mt-28">
+          <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+            <div className="flex-1 flex justify-center">
+              <img src="/images/schedule-call.svg" alt="Schedule Call" className="w-full max-w-sm" />
+            </div>
+            <div className="flex-1 text-center md:text-left">
+              <button className="bg-[#03AF08] text-white px-5 py-2 rounded-full font-semibold text-sm hover:opacity-90 transition mb-4">
+                Schedule Call Now
+              </button>
+              <p className="text-gray-700 text-base">
+                Join over 10k users worldwide. <br />
+                Start scheduling in less than 1 minute.
+              </p>
+            </div>
           </div>
         </div>
       </section>
