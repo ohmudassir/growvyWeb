@@ -50,6 +50,22 @@ export default function Jobs() {
             </button>
           ))}
         </div>
+        {/* Join Community Section */}
+        <div className="max-w-5xl mx-auto mt-28 text-center px-4 py-16">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-black leading-tight">
+            Join Growvy's 50M+ Job Seeker <br /> Community & Get Hired Faster!
+          </h2>
+          <p className="mt-6 text-gray-700 text-lg max-w-3xl mx-auto">
+            “Build your profile, get noticed by top employers, and access
+            exclusive job opportunities tailored to your skills. Your next career
+            move starts here!”
+          </p>
+          <div className="mt-8">
+            <button className="bg-[#03AF08] text-white px-12 py-2 rounded-full text-base font-semibold hover:opacity-90 transition shadow-lg">
+              Sign In
+            </button>
+          </div>
+        </div>
       </section>
 
       <Footer />

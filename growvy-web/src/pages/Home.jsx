@@ -145,7 +145,7 @@ export default function Home() {
             move starts here!”
           </p>
           <div className="mt-8">
-            <button className="bg-[#03AF08] text-white px-10 py-4 rounded-full text-base font-semibold hover:opacity-90 transition shadow-lg">
+            <button className="bg-[#03AF08] text-white px-12 py-2 rounded-full text-base font-semibold hover:opacity-90 transition shadow-lg">
               Sign In
             </button>
           </div>
