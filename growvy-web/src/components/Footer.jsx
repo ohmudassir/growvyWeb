@@ -42,34 +42,32 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Right */}
+        {/* Right (List + Stars + Image aligned) */}
         <div className="flex-1">
-          <ul className="text-sm space-y-2 text-gray-800 font-semibold">
-            <li className="hover:text-[#03AF08] cursor-pointer">About Us</li>
-            <li className="hover:text-[#03AF08] cursor-pointer">Services</li>
-            <li className="hover:text-[#03AF08] cursor-pointer">
-              Plans & Pricing
-            </li>
-            <li className="hover:text-[#03AF08] cursor-pointer">
-              Business Solutions
-            </li>
-            <li className="hover:text-[#03AF08] cursor-pointer">
-              Success Stories
-            </li>
-            <li className="hover:text-[#03AF08] cursor-pointer">Jobs</li>
-          </ul>
+          <div className="flex items-start justify-between gap-6">
+            {/* Text + Stars */}
+            <div>
+              <ul className="text-sm space-y-2 text-gray-800 font-semibold">
+                <li className="hover:text-[#03AF08] cursor-pointer">About Us</li>
+                <li className="hover:text-[#03AF08] cursor-pointer">Services</li>
+                <li className="hover:text-[#03AF08] cursor-pointer">Plans & Pricing</li>
+                <li className="hover:text-[#03AF08] cursor-pointer">Business Solutions</li>
+                <li className="hover:text-[#03AF08] cursor-pointer">Success Stories</li>
+                <li className="hover:text-[#03AF08] cursor-pointer">Jobs</li>
+              </ul>
+              <div className="flex items-center mt-4">
+                <span className="text-green-600 text-lg">★★★★★</span>
+              </div>
+            </div>
 
-          <div className="flex items-center mt-4">
-            <span className="text-green-600 text-lg">★★★★★</span>
-          </div>
-
-          {/* Footer Image */}
-          <div className="mt-6 flex justify-end">
-            <img
-              src="/images/footer-illustration.png"
-              alt="Growvy Footer Graphic"
-              className="w-40 md:w-52 object-contain"
-            />
+            {/* Image */}
+            <div className="flex-shrink-0">
+              <img
+                src="/images/footer-illustration.svg"
+                alt="Growvy Footer Graphic"
+                className="w-32 md:w-40 object-contain"
+              />
+            </div>
           </div>
         </div>
       </div>
