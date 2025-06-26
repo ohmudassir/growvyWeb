@@ -31,7 +31,7 @@ export default function Success() {
         </div>
       </section>
       {/* Join Community Section */}
-        <div className="max-w-5xl mx-auto mt-28 text-center px-4 py-16">
+        <div className="max-w-4xl mx-auto mt-28 text-center px-4 py-16">
           <h2 className="text-4xl md:text-5xl font-extrabold text-black leading-tight">
             Join over 10k users worldwide
           </h2>
@@ -44,7 +44,7 @@ export default function Success() {
         </div>
         {/* Brand Success Images Section */}
 <section className="bg-white py-16 px-6 md:px-12">
-  <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 items-center gap-8 justify-items-center">
+  <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 items-center gap-8 justify-items-center">
     <img src="/images/brands/echonetService.png" alt="Brand 1" className="w-32 h-auto object-contain" />
     <img src="/images/brands/easypaisa.png" alt="Brand 2" className="w-32 h-auto object-contain" />
     <img src="/images/brands/jazzcash.png" alt="Brand 3" className="w-32 h-auto object-contain" />
@@ -52,7 +52,7 @@ export default function Success() {
   </div>
 </section>
 {/* Join Community Section */}
-        <div className="max-w-5xl mx-auto mt-28 text-center px-4 py-16">
+        <div className="max-w-4xl mx-auto mt-28 text-center px-4 py-16">
           <h2 className="text-4xl md:text-5xl font-extrabold text-black leading-tight">
             Join Growvy's 50M+ Job Seeker <br /> Community & Get Hired Faster!
           </h2>
@@ -71,31 +71,37 @@ export default function Success() {
 <section className="bg-white pb-20 pt-10 px-4 md:px-0">
   <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
     {[1, 2].map((_, i) => (
-      <div
-        key={i}
-        className="relative border-2 border-[#B6D68B] rounded-2xl pt-6 pb-6 px-6 shadow-sm"
-      >
-        {/* Custom User Image - Left Corner, Half Outside */}
-        <div className="absolute -left-6 -top-6">
-          <img
-            src="/images/user-placeholder.png" // Replace with your image
-            alt="User"
-            className="w-16 h-16 object-cover rounded-full border-4 border-white shadow-md"
-          />
-        </div>
+  <div
+    key={i}
+    className="relative p-[4px] rounded-2xl bg-gradient-to-br from-[#B6D68B] via-[#C8FACC] to-[#A4DD92] shadow-md"
+  >
+    {/* Inner white card */}
+    <div className="bg-white rounded-2xl pt-6 pb-6 px-6 relative">
+      {/* User Image - Half Outside, Top Left */}
+      <div className="absolute -left-2 -top-12">
+        <img
+          src="/images/success/userProfile.png" // Replace with actual image
+          alt="User"
+          className="w-16 h-16 object-cover"
+        />
+      </div>
 
-        <div className="pl-16">
-          <p className="text-gray-800 font-medium text-lg mb-2">
-            Excellent Experience with growvy.
-          </p>
-          <div className="flex text-yellow-400 text-xl">
-            {Array(5).fill("★").map((star, idx) => (
+      <div className="pl-16">
+        <p className="text-gray-800 font-medium text-lg mb-2">
+          Excellent Experience with growvy.
+        </p>
+        <div className="flex text-yellow-400 text-xl">
+          {Array(5)
+            .fill("★")
+            .map((star, idx) => (
               <span key={idx}>{star}</span>
             ))}
-          </div>
         </div>
       </div>
-    ))}
+    </div>
+  </div>
+))}
+
   </div>
 
   {/* Custom Dot Pagination */}

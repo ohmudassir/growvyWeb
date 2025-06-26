@@ -1,4 +1,5 @@
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -48,12 +49,24 @@ export default function Footer() {
             {/* Text + Stars */}
             <div>
               <ul className="text-sm space-y-2 text-gray-800 font-semibold">
-                <li className="hover:text-[#03AF08] cursor-pointer">About Us</li>
-                <li className="hover:text-[#03AF08] cursor-pointer">Services</li>
-                <li className="hover:text-[#03AF08] cursor-pointer">Plans & Pricing</li>
-                <li className="hover:text-[#03AF08] cursor-pointer">Business Solutions</li>
-                <li className="hover:text-[#03AF08] cursor-pointer">Success Stories</li>
-                <li className="hover:text-[#03AF08] cursor-pointer">Jobs</li>
+                <li>
+                  <Link to="/about" className="hover:text-[#03AF08]">About Us</Link>
+                </li>
+                <li>
+                  <Link to="/services" className="hover:text-[#03AF08]">Services</Link>
+                </li>
+                <li>
+                  <Link to="/pricing" className="hover:text-[#03AF08]">Plans & Pricing</Link>
+                </li>
+                <li>
+                  <Link to="/business" className="hover:text-[#03AF08]">Business Solutions</Link>
+                </li>
+                <li>
+                  <Link to="/success" className="hover:text-[#03AF08]">Success Stories</Link>
+                </li>
+                <li>
+                  <Link to="/jobs" className="hover:text-[#03AF08]">Jobs</Link>
+                </li>
               </ul>
               <div className="flex items-center mt-4">
                 <span className="text-green-600 text-lg">★★★★★</span>

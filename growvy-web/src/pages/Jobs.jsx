@@ -33,7 +33,7 @@ export default function Jobs() {
 
       {/* Categories Section */}
       <section className="bg-white pt-20 pb-28 px-6 md:px-12">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-1 gap-y-6 place-items-center">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-1 gap-y-6 place-items-center">
           {[
             "Tech",
             "Management",
@@ -51,7 +51,7 @@ export default function Jobs() {
           ))}
         </div>
         {/* Join Community Section */}
-        <div className="max-w-5xl mx-auto mt-28 text-center px-4 py-16">
+        <div className="max-w-4xl mx-auto mt-28 text-center px-4 py-16">
           <h2 className="text-4xl md:text-5xl font-extrabold text-black leading-tight">
             Join Growvy's 50M+ Job Seeker <br /> Community & Get Hired Faster!
           </h2>

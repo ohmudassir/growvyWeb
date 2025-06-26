@@ -33,7 +33,7 @@ export default function Services() {
 
       {/* Services Cards */}
       <section className="bg-white pt-28 pb-28 px-6 md:px-12">
-        <div className="max-w-6xl mx-auto grid gap-20 md:grid-cols-3 place-items-center">
+        <div className="max-w-5xl mx-auto grid gap-20 md:grid-cols-3 place-items-center">
           {/* Card 1 */}
           <div className="flex flex-col items-center">
             <div className="relative bg-white border-[3px] border-black rounded-2xl w-64 h-64 px-6 pt-20 pb-6 text-center shadow-md">
@@ -111,7 +111,7 @@ export default function Services() {
         </div>
         {/* Section: E-commerce Owner */}
         <div className="bg-white py-16 px-6 md:px-12 mt-28">
-          <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+          <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
                 Problems in Hiring
@@ -124,7 +124,7 @@ export default function Services() {
             </div>
             <div className="flex-1 flex justify-center">
               <img
-                src="/images/ecommerce-owner.svg"
+                src="/images/services/hiringProblem.svg"
                 alt="E-commerce"
                 className="w-full max-w-sm"
               />
@@ -134,19 +134,19 @@ export default function Services() {
         {/* Card 2 */}
         <div className="grid md:grid-cols-2 items-center gap-6">
           {/* Image */}
-          <div className="flex justify-center">
+          <div className="flex-1 flex justify-center">
             <img
-              src="/images/employer.svg"
+              src="/images/services/growvySolution.svg"
               alt="Employer"
-              className="max-w-[200px]"
+              className="w-full max-w-sm"
             />
           </div>
 
           {/* Text Content */}
           <div className="max-w-sm">
-            <h3 className="text-2xl font-bold text-black">
+            <h2 className="text-2xl font-bold text-black">
               With Growvy Solution
-            </h3>
+            </h2>
             <p className="text-gray-700 mt-2">
               With Growvy, businesses can access a database of active job
               seekers who have recently joined for job search. Use advanced
@@ -162,7 +162,7 @@ export default function Services() {
         </div>
 
         <div className="bg-white py-16 px-6 md:px-12 mt-28">
-          <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+          <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
                 E-commerce Business
@@ -175,7 +175,7 @@ export default function Services() {
             </div>
             <div className="flex-1 flex justify-center">
               <img
-                src="/images/ecommerce-owner.svg"
+                src="/images/services/eccomerceBusiness.svg"
                 alt="E-commerce"
                 className="w-full max-w-sm"
               />
@@ -185,11 +185,11 @@ export default function Services() {
         {/* Card 2 */}
         <div className="grid md:grid-cols-2 items-center gap-6">
           {/* Image */}
-          <div className="flex justify-center">
+          <div className="flex-1 flex justify-center">
             <img
-              src="/images/employer.svg"
+              src="/images/services/growvySolution.svg"
               alt="Employer"
-              className="max-w-[200px]"
+              className="w-full max-w-sm"
             />
           </div>
 
@@ -213,7 +213,7 @@ export default function Services() {
 
           {/* Section: Schedule Call */}
         <div className="bg-white py-16 px-6 md:px-12 mt-28">
-          <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+          <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
             <div className="flex-1 flex justify-center">
               <img src="/images/schedule-call.svg" alt="Schedule Call" className="w-full max-w-sm" />
             </div>

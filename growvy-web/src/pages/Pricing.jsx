@@ -82,7 +82,7 @@ export default function Pricing() {
 
       {/* Section: Schedule Call */}
         <div className="bg-white py-16 px-6 md:px-12 mt-28">
-          <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+          <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
             <div className="flex-1 flex justify-center">
               <img src="/images/schedule-call.svg" alt="Schedule Call" className="w-full max-w-sm" />
             </div>
