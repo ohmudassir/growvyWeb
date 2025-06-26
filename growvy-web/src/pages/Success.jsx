@@ -42,7 +42,16 @@ export default function Success() {
             </button>
           </div>
         </div>
-        
+        {/* Brand Success Images Section */}
+<section className="bg-white py-16 px-6 md:px-12">
+  <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 items-center gap-8 justify-items-center">
+    <img src="/images/brands/echonetService.png" alt="Brand 1" className="w-32 h-auto object-contain" />
+    <img src="/images/brands/easypaisa.png" alt="Brand 2" className="w-32 h-auto object-contain" />
+    <img src="/images/brands/jazzcash.png" alt="Brand 3" className="w-32 h-auto object-contain" />
+    <img src="/images/brands/motive.png" alt="Brand 4" className="w-32 h-auto object-contain" />
+  </div>
+</section>
+
 
       <Footer />
     </>
