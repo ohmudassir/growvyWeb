@@ -66,6 +66,45 @@ export default function Jobs() {
             </button>
           </div>
         </div>
+        {/* Top Jobs Section */}
+<section className="bg-white pt-10 px-6 md:px-12">
+  <div className="max-w-4xl mx-auto">
+    <h2 className="text-3xl md:text-4xl font-extrabold text-black text-center mb-10">
+      Top Jobs
+    </h2>
+
+    <div className="space-y-4">
+      {[
+        "Business Developer",
+        "Finance Manager",
+        "Human Resource Manager",
+        "Software Engineer",
+        "Web Developer",
+        "Graphic Designer / Ui / Ux",
+        "SEO Expert",
+        "Android Developer",
+        "Floor Manager",
+        "Sales Representative",
+        "Data Entry Operator",
+        "Delivery Man",
+        "Urdu / English Call Center Agent",
+        "Morning Shift Jobs for Females",
+        "Accountant",
+      ].map((job) => (
+        <div
+          key={job}
+          className="flex justify-between items-center border-2 border-black px-6 py-4 rounded-3xl w-full"
+        >
+          <span className="text-sm font-bold text-black">{job}</span>
+          <button className="bg-[#03AF08] text-white text-xs px-6 py-2 rounded-full font-bold hover:opacity-90 transition">
+            Apply Now
+          </button>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
       </section>
 
       <Footer />
