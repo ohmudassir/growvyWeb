@@ -51,6 +51,75 @@ export default function Success() {
     <img src="/images/brands/motive.png" alt="Brand 4" className="w-32 h-auto object-contain" />
   </div>
 </section>
+{/* Join Community Section */}
+        <div className="max-w-5xl mx-auto mt-28 text-center px-4 py-16">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-black leading-tight">
+            Join Growvy's 50M+ Job Seeker <br /> Community & Get Hired Faster!
+          </h2>
+          <p className="mt-6 text-gray-700 text-lg max-w-3xl mx-auto">
+            “Build your profile, get noticed by top employers, and access
+            exclusive job opportunities tailored to your skills. Your next
+            career move starts here!”
+          </p>
+          <div className="mt-8">
+            <button className="bg-[#03AF08] text-white px-12 py-2 rounded-full text-base font-semibold hover:opacity-90 transition shadow-lg">
+              Sign In
+            </button>
+          </div>
+        </div>
+{/* Testimonials Section */}
+<section className="bg-white pb-20 pt-10 px-4 md:px-0">
+  <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+    {[1, 2].map((_, i) => (
+      <div
+        key={i}
+        className="relative border-2 border-[#B6D68B] rounded-2xl pt-6 pb-6 px-6 shadow-sm"
+      >
+        {/* Custom User Image - Left Corner, Half Outside */}
+        <div className="absolute -left-6 -top-6">
+          <img
+            src="/images/user-placeholder.png" // Replace with your image
+            alt="User"
+            className="w-16 h-16 object-cover rounded-full border-4 border-white shadow-md"
+          />
+        </div>
+
+        <div className="pl-16">
+          <p className="text-gray-800 font-medium text-lg mb-2">
+            Excellent Experience with growvy.
+          </p>
+          <div className="flex text-yellow-400 text-xl">
+            {Array(5).fill("★").map((star, idx) => (
+              <span key={idx}>{star}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+
+  {/* Custom Dot Pagination */}
+  <div className="mt-12 flex justify-center items-center gap-1">
+    {Array(15).fill(0).map((_, idx) => {
+      // Center dot index
+      const center = 7;
+      // Distance from center
+      const distance = Math.abs(center - idx);
+      // Size logic (largest = 6px, smallest = 2px)
+      const size = 10 - distance > 2 ? 10 - distance : 2;
+
+      return (
+        <span
+          key={idx}
+          style={{ width: `${size}px`, height: `${size}px` }}
+          className="rounded-full bg-[#03AF08]"
+        ></span>
+      );
+    })}
+  </div>
+</section>
+
+        
 
 
       <Footer />
