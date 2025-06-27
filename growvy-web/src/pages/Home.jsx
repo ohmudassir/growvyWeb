@@ -7,8 +7,9 @@ export default function Home() {
       <Navbar />
 
       <section className="min-h-screen bg-white pt-10 pb-24 px-6 md:px-12">
-        {/* Hero Section */}
+        {/* ---------------- Hero Section ---------------- */}
         <div className="max-w-6xl mx-auto mt-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          {/* Text Content */}
           <div>
             <h1 className="text-5xl md:text-6xl font-extrabold text-black leading-snug">
               Maximize <br />
@@ -28,6 +29,8 @@ export default function Home() {
               </button>
             </div>
           </div>
+
+          {/* Hero Image */}
           <div className="w-full h-full flex justify-center">
             <img
               src="/images/growvy.png"
@@ -37,7 +40,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Section Divider & Intro Paragraph */}
+        {/* ---------------- Introduction Divider ---------------- */}
         <div className="max-w-4xl mx-auto mt-20 px-4">
           <div className="h-2 w-16 bg-[#03AF08] ml-auto rounded-full mb-6"></div>
           <p className="text-gray-700 text-base leading-relaxed text-center">
@@ -49,9 +52,9 @@ export default function Home() {
           </p>
         </div>
 
-        {/* 4 Feature Cards Section */}
+        {/* ---------------- Feature Cards ---------------- */}
         <div className="max-w-6xl mx-auto mt-20 grid gap-16 px-4">
-          {/* Card 1 */}
+          {/* Job Seeker Card */}
           <div className="grid md:grid-cols-2 items-center gap-6">
             <div>
               <h3 className="text-3xl font-bold text-black">I'm a Job Seeker!</h3>
@@ -71,7 +74,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Card 2 */}
+          {/* Employer Card */}
           <div className="grid md:grid-cols-2 items-center gap-6">
             <div className="flex justify-center">
               <img
@@ -91,7 +94,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Card 3 */}
+          {/* E-commerce Store Card */}
           <div className="grid md:grid-cols-2 items-center gap-6">
             <div>
               <h3 className="text-3xl font-bold text-black">
@@ -113,7 +116,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Card 4 */}
+          {/* Business Owner Card */}
           <div className="grid md:grid-cols-2 items-center gap-6">
             <div className="flex justify-center">
               <img
@@ -134,7 +137,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Join Community Section */}
+        {/* ---------------- Community Join Callout ---------------- */}
         <div className="max-w-5xl mx-auto mt-28 text-center px-4 py-16">
           <h2 className="text-4xl md:text-5xl font-extrabold text-black leading-tight">
             Join Growvy's 50M+ Job Seeker <br /> Community & Get Hired Faster!
@@ -151,7 +154,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Wavy Arrow Section */}
+        {/* ---------------- Visual Wavy Arrow ---------------- */}
         <div className="flex justify-center my-20">
           <svg
             width="340"
@@ -192,11 +195,13 @@ export default function Home() {
           </svg>
         </div>
 
-        {/* Section: E-commerce Owner */}
+        {/* ---------------- E-commerce CTA ---------------- */}
         <div className="bg-white py-16 px-6 md:px-12 mt-28">
           <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
             <div className="flex-1">
-              <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">E-commerce Owner?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
+                E-commerce Owner?
+              </h2>
               <p className="text-gray-700 text-base max-w-md">
                 Optimize your business with smart asset management, growth strategies, and
                 cutting-edge solutions to boost sales and efficiency with Growvy!
@@ -206,16 +211,24 @@ export default function Home() {
               </button>
             </div>
             <div className="flex-1 flex justify-center">
-              <img src="/images/ecommerce-owner.svg" alt="E-commerce" className="w-full max-w-sm" />
+              <img
+                src="/images/ecommerce-owner.svg"
+                alt="E-commerce"
+                className="w-full max-w-sm"
+              />
             </div>
           </div>
         </div>
 
-        {/* Section: Schedule Call */}
+        {/* ---------------- Schedule a Call CTA ---------------- */}
         <div className="bg-white py-16 px-6 md:px-12 mt-28">
           <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
             <div className="flex-1 flex justify-center">
-              <img src="/images/schedule-call.svg" alt="Schedule Call" className="w-full max-w-sm" />
+              <img
+                src="/images/schedule-call.svg"
+                alt="Schedule Call"
+                className="w-full max-w-sm"
+              />
             </div>
             <div className="flex-1 text-center md:text-left">
               <button className="bg-[#03AF08] text-white px-5 py-2 rounded-full font-semibold text-sm hover:opacity-90 transition mb-4">
