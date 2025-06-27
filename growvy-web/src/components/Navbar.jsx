@@ -17,21 +17,11 @@ export default function Navbar() {
   return (
     <header className="relative z-50 px-6 md:px-12 mt-6">
       <div className="flex justify-between items-center max-w-6xl mx-auto">
-        {/* Logo */}
-        <h1 className="text-xl font-bold text-black">Growvy</h1>
+        {/* Logo - only visible on mobile */}
+        <h1 className="text-xl font-bold text-black md:hidden">Growvy</h1>
 
-        {/* Hamburger Toggle (Mobile only) */}
-<button
-  className="md:hidden z-50 p-2 rounded-full border border-black ml-2"
-  onClick={() => setMenuOpen(!menuOpen)}
-  aria-label="Toggle menu"
->
-  {menuOpen ? <X size={20} /> : <Menu size={20} />}
-</button>
-
-
-        {/* Desktop Nav */}
-        <nav className="hidden md:flex gap-8 bg-white border border-black rounded-full shadow-md px-10 py-3 text-sm font-semibold text-gray-900">
+        {/* Desktop Navigation - centered */}
+        <nav className="hidden md:flex gap-10 bg-white border border-black rounded-full shadow-md px-12 py-4 text-base font-semibold text-gray-900 mx-auto">
           {navItems.map(({ name, path }) => (
             <Link
               key={name}
@@ -44,12 +34,20 @@ export default function Navbar() {
             </Link>
           ))}
         </nav>
+
+        {/* Hamburger Button - only on mobile */}
+        <button
+          className="md:hidden z-50 p-2 rounded-full border border-black ml-2"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
+          {menuOpen ? <X size={20} /> : <Menu size={20} />}
+        </button>
       </div>
 
-      {/* Mobile Dropdown Menu */}
+      {/* Mobile Menu Dropdown */}
       {menuOpen && (
         <div className="absolute top-full mt-2 left-1/2 -translate-x-1/2 w-[90%] bg-white rounded-2xl shadow-lg border border-black z-40 flex flex-col items-center py-4 space-y-4 transition-all duration-300">
-
           {navItems.map(({ name, path }) => (
             <Link
               key={name}
