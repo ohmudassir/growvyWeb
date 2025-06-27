@@ -6,7 +6,7 @@ export default function Jobs() {
     <>
       <Navbar />
 
-      {/* Header Section */}
+      {/* ---------------- Page Header Section ---------------- */}
       <section className="relative bg-[#E6F7EA] py-20 text-center px-4 mt-10">
         <h1 className="text-4xl md:text-5xl font-extrabold text-black mb-4">
           Jobs
@@ -16,7 +16,7 @@ export default function Jobs() {
           opportunities today!"
         </p>
 
-        {/* Curved Bottom SVG */}
+        {/* Decorative curved bottom using SVG */}
         <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
           <svg
             viewBox="0 0 1440 120"
@@ -31,7 +31,7 @@ export default function Jobs() {
         </div>
       </section>
 
-      {/* Categories Section */}
+      {/* ---------------- Job Categories Section ---------------- */}
       <section className="bg-white pt-20 pb-28 px-6 md:px-12">
         <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-1 gap-y-6 place-items-center">
           {[
@@ -50,7 +50,8 @@ export default function Jobs() {
             </button>
           ))}
         </div>
-        {/* Join Community Section */}
+
+        {/* ---------------- Call to Join Community ---------------- */}
         <div className="max-w-4xl mx-auto mt-28 text-center px-4 py-16">
           <h2 className="text-4xl md:text-5xl font-extrabold text-black leading-tight">
             Join Growvy's 50M+ Job Seeker <br /> Community & Get Hired Faster!
@@ -66,7 +67,8 @@ export default function Jobs() {
             </button>
           </div>
         </div>
-        {/* Top Jobs Section */}
+
+        {/* ---------------- Top Job Listings ---------------- */}
         <section className="bg-white pt-10 px-6 md:px-12">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-extrabold text-black text-center mb-10">
@@ -105,7 +107,8 @@ export default function Jobs() {
           </div>
         </section>
       </section>
-      {/* Wavy Arrow Section */}
+
+      {/* ---------------- Decorative Wavy Arrow ---------------- */}
       <div className="flex justify-center my-20">
         <svg
           width="340"
@@ -129,13 +132,13 @@ export default function Jobs() {
           <circle cx="20" cy="30" r="6" fill="#3B82F6" />
           <path
             d="M 26 30
-                Q 50 10, 70 30
-                Q 90 50, 110 30
-                Q 130 10, 150 30
-                Q 170 50, 190 30
-                Q 210 10, 230 30
-                Q 250 50, 270 30
-                Q 290 10, 310 30"
+              Q 50 10, 70 30
+              Q 90 50, 110 30
+              Q 130 10, 150 30
+              Q 170 50, 190 30
+              Q 210 10, 230 30
+              Q 250 50, 270 30
+              Q 290 10, 310 30"
             stroke="#000"
             strokeWidth="2"
             fill="none"
@@ -145,28 +148,28 @@ export default function Jobs() {
           <circle cx="320" cy="30" r="6" fill="#03AF08" />
         </svg>
       </div>
-      {/* 4 Feature Cards Section */}
-        <div className="max-w-2xl mx-auto mt-20 grid gap-16 px-4">
-          {/* Card 1 */}
-          <div className="grid md:grid-cols-2 items-center gap-6">
-            <div>
-              <h3 className="text-4xl font-bold text-black">I'm a Job Seeker!</h3>
-              <p className="text-gray-600 mt-2">
-                Looking for job according to my skills and requirements.
-              </p>
-              <button className="mt-4 bg-[#03AF08] text-white px-14 py-2 rounded-full text-sm font-semibold hover:opacity-90 transition">
-                Jobs
-              </button>
-            </div>
-            <div className="flex justify-center">
-              <img
-                src="/images/job-seeker.svg"
-                alt="Job Seeker"
-                className="max-w-[200px]"
-              />
-            </div>
+
+      {/* ---------------- Closing Card (Job Seeker Focused) ---------------- */}
+      <div className="max-w-2xl mx-auto mt-20 grid gap-16 px-4">
+        <div className="grid md:grid-cols-2 items-center gap-6">
+          <div>
+            <h3 className="text-4xl font-bold text-black">I'm a Job Seeker!</h3>
+            <p className="text-gray-600 mt-2">
+              Looking for job according to my skills and requirements.
+            </p>
+            <button className="mt-4 bg-[#03AF08] text-white px-14 py-2 rounded-full text-sm font-semibold hover:opacity-90 transition">
+              Jobs
+            </button>
           </div>
+          <div className="flex justify-center">
+            <img
+              src="/images/job-seeker.svg"
+              alt="Job Seeker"
+              className="max-w-[200px]"
+            />
           </div>
+        </div>
+      </div>
 
       <Footer />
     </>
