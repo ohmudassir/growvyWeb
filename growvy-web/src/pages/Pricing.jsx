@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import PricingSection from "../components/PricingSection";
 
 export default function Pricing() {
+  // Shared plans used across all sections for simplicity
   const commonPlans = [
     {
       title: "Basic CV Service",
@@ -47,6 +48,8 @@ export default function Pricing() {
   return (
     <>
       <Navbar />
+
+      {/* Top header section with curved bottom */}
       <section className="relative bg-[#E6F7EA] py-20 text-center px-4 mt-10">
         <h1 className="text-4xl md:text-5xl font-extrabold text-black mb-4">Pricing</h1>
         <p className="max-w-2xl mx-auto text-gray-700 text-base">
@@ -59,6 +62,7 @@ export default function Pricing() {
         </div>
       </section>
 
+      {/* Section: Recruitment Plans */}
       <PricingSection
         title="Recruitment Solution"
         subtitle="Unlock seamless hiring with our tailored Recruitment Plans—flexible pricing designed to find your perfect talent, fast!"
@@ -66,6 +70,7 @@ export default function Pricing() {
         plans={commonPlans}
       />
 
+      {/* Section: E-commerce Plans */}
       <PricingSection
         title="E-commerce Solutions"
         subtitle="Boost your online store with our E-commerce Plans—affordable pricing crafted to scale your business effortlessly"
@@ -73,6 +78,7 @@ export default function Pricing() {
         plans={commonPlans}
       />
 
+      {/* Section: Business Plans */}
       <PricingSection
         title="Business Solutions"
         subtitle="Grow your operations with tailored business strategies—custom plans to maximize efficiency and scale"
@@ -80,23 +86,23 @@ export default function Pricing() {
         plans={commonPlans}
       />
 
-      {/* Section: Schedule Call */}
-        <div className="bg-white py-16 px-6 md:px-12 mt-28">
-          <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
-            <div className="flex-1 flex justify-center">
-              <img src="/images/schedule-call.svg" alt="Schedule Call" className="w-full max-w-sm" />
-            </div>
-            <div className="flex-1 text-center md:text-left">
-              <button className="bg-[#03AF08] text-white px-5 py-2 rounded-full font-semibold text-sm hover:opacity-90 transition mb-4">
-                Schedule Call Now
-              </button>
-              <p className="text-gray-700 text-base">
-                Join over 10k users worldwide. <br />
-                Start scheduling in less than 1 minute.
-              </p>
-            </div>
+      {/* Schedule a call section */}
+      <div className="bg-white py-16 px-6 md:px-12 mt-28">
+        <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+          <div className="flex-1 flex justify-center">
+            <img src="/images/schedule-call.svg" alt="Schedule Call" className="w-full max-w-sm" />
+          </div>
+          <div className="flex-1 text-center md:text-left">
+            <button className="bg-[#03AF08] text-white px-5 py-2 rounded-full font-semibold text-sm hover:opacity-90 transition mb-4">
+              Schedule Call Now
+            </button>
+            <p className="text-gray-700 text-base">
+              Join over 10k users worldwide. <br />
+              Start scheduling in less than 1 minute.
+            </p>
           </div>
         </div>
+      </div>
 
       <Footer />
     </>
