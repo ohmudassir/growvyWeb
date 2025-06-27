@@ -6,7 +6,7 @@ export default function Services() {
     <>
       <Navbar />
 
-      {/* Header Section */}
+      {/* Page Hero Section with wave-shaped bottom */}
       <section className="relative bg-[#E6F7EA] py-20 text-center px-4 mt-10">
         <h1 className="text-4xl md:text-5xl font-extrabold text-black mb-4">
           Services
@@ -16,7 +16,7 @@ export default function Services() {
           businesses and professionals thrive.
         </p>
 
-        {/* Curved bottom using SVG */}
+        {/* Curved SVG to transition into white background */}
         <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
           <svg
             viewBox="0 0 1440 120"
@@ -31,10 +31,10 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Services Cards */}
+      {/* Services Cards - each card shows a key business solution */}
       <section className="bg-white pt-28 pb-28 px-6 md:px-12">
         <div className="max-w-5xl mx-auto grid gap-20 md:grid-cols-3 place-items-center">
-          {/* Card 1 */}
+          {/* Card: Hiring */}
           <div className="flex flex-col items-center">
             <div className="relative bg-white border-[3px] border-black rounded-2xl w-64 h-64 px-6 pt-20 pb-6 text-center shadow-md">
               <div className="absolute -top-14 left-1/2 transform -translate-x-1/2">
@@ -55,7 +55,7 @@ export default function Services() {
             </button>
           </div>
 
-          {/* Card 2 */}
+          {/* Card: E-commerce */}
           <div className="flex flex-col items-center">
             <div className="relative bg-white border-[3px] border-black rounded-2xl w-64 h-64 px-6 pt-20 pb-6 text-center shadow-md">
               <div className="absolute -top-14 left-1/2 transform -translate-x-1/2">
@@ -76,7 +76,7 @@ export default function Services() {
             </button>
           </div>
 
-          {/* Card 3 */}
+          {/* Card: Business */}
           <div className="flex flex-col items-center">
             <div className="relative bg-white border-[3px] border-black rounded-2xl w-64 h-64 px-6 pt-20 pb-6 text-center shadow-md">
               <div className="absolute -top-14 left-1/2 transform -translate-x-1/2">
@@ -97,19 +97,20 @@ export default function Services() {
             </button>
           </div>
         </div>
-        {/* Join Community Section */}
+
+        {/* CTA Section: Invite users to explore more */}
         <div className="max-w-5xl mx-auto mt-28 text-center px-4 py-16">
           <h2 className="text-4xl md:text-5xl font-extrabold text-black leading-tight">
             Join over 10k users worldwide
           </h2>
-
           <div className="mt-8">
             <button className="bg-[#03AF08] text-white px-12 py-2 rounded-full text-base font-semibold hover:opacity-90 transition shadow-lg">
               View Pricing
             </button>
           </div>
         </div>
-        {/* Section: E-commerce Owner */}
+
+        {/* Problem 1: Hiring Challenges */}
         <div className="bg-white py-16 px-6 md:px-12 mt-28">
           <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
             <div className="flex-1">
@@ -125,24 +126,22 @@ export default function Services() {
             <div className="flex-1 flex justify-center">
               <img
                 src="/images/services/hiringProblem.svg"
-                alt="E-commerce"
+                alt="Hiring Problem"
                 className="w-full max-w-sm"
               />
             </div>
           </div>
         </div>
-        {/* Card 2 */}
+
+        {/* Solution 1: Growvy's Hiring Advantage */}
         <div className="grid md:grid-cols-2 items-center gap-6">
-          {/* Image */}
           <div className="flex-1 flex justify-center">
             <img
               src="/images/services/growvySolution.svg"
-              alt="Employer"
+              alt="Growvy Solution"
               className="w-full max-w-sm"
             />
           </div>
-
-          {/* Text Content */}
           <div className="max-w-sm">
             <h2 className="text-2xl font-bold text-black">
               With Growvy Solution
@@ -161,6 +160,7 @@ export default function Services() {
           </div>
         </div>
 
+        {/* Problem 2: E-commerce Growth Issues */}
         <div className="bg-white py-16 px-6 md:px-12 mt-28">
           <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
             <div className="flex-1">
@@ -176,24 +176,22 @@ export default function Services() {
             <div className="flex-1 flex justify-center">
               <img
                 src="/images/services/eccomerceBusiness.svg"
-                alt="E-commerce"
+                alt="E-commerce Problem"
                 className="w-full max-w-sm"
               />
             </div>
           </div>
         </div>
-        {/* Card 2 */}
+
+        {/* Solution 2: Growvy for E-commerce */}
         <div className="grid md:grid-cols-2 items-center gap-6">
-          {/* Image */}
           <div className="flex-1 flex justify-center">
             <img
               src="/images/services/growvySolution.svg"
-              alt="Employer"
+              alt="Growvy E-commerce"
               className="w-full max-w-sm"
             />
           </div>
-
-          {/* Text Content */}
           <div className="max-w-sm">
             <h3 className="text-2xl font-bold text-black">
               With Growvy Solution
@@ -211,11 +209,15 @@ export default function Services() {
           </div>
         </div>
 
-          {/* Section: Schedule Call */}
+        {/* Final CTA: Schedule a Call */}
         <div className="bg-white py-16 px-6 md:px-12 mt-28">
           <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
             <div className="flex-1 flex justify-center">
-              <img src="/images/schedule-call.svg" alt="Schedule Call" className="w-full max-w-sm" />
+              <img
+                src="/images/schedule-call.svg"
+                alt="Schedule Call"
+                className="w-full max-w-sm"
+              />
             </div>
             <div className="flex-1 text-center md:text-left">
               <button className="bg-[#03AF08] text-white px-5 py-2 rounded-full font-semibold text-sm hover:opacity-90 transition mb-4">
