@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div className="bg-white py-16 px-6 md:px-12 mt-28">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start justify-between gap-10">
-        {/* Left */}
+        {/* Left section: Branding and social media */}
         <div className="flex-1">
           <h2 className="text-2xl font-bold text-black">Growvy</h2>
           <p className="text-gray-700 text-base max-w-sm mt-2">
@@ -14,7 +14,7 @@ export default function Footer() {
             with Growvy!
           </p>
 
-          {/* Social Icons */}
+          {/* Social media icons with hover effect */}
           <div className="flex space-x-4 mt-4">
             <a
               href="https://facebook.com"
@@ -43,10 +43,10 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Right (List + Stars + Image aligned) */}
+        {/* Right section: Navigation links + ratings + graphic */}
         <div className="flex-1">
           <div className="flex items-start justify-between gap-6">
-            {/* Text + Stars */}
+            {/* Internal site links */}
             <div>
               <ul className="text-sm space-y-2 text-gray-800 font-semibold">
                 <li>
@@ -68,12 +68,14 @@ export default function Footer() {
                   <Link to="/jobs" className="hover:text-[#03AF08]">Jobs</Link>
                 </li>
               </ul>
+
+              {/* Rating visuals */}
               <div className="flex items-center mt-4">
                 <span className="text-green-600 text-lg">★★★★★</span>
               </div>
             </div>
 
-            {/* Image */}
+            {/* Decorative footer illustration */}
             <div className="flex-shrink-0">
               <img
                 src="/images/footer-illustration.svg"
